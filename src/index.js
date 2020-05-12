@@ -66,12 +66,7 @@ document.addEventListener("DOMContentLoaded",
             return (x > y ? 1 : (x < y ? -1 : 0))
           }
         )) {
-          const elm = document.createElement('li')
-          elm.style.color = impMap[toDo.importance]
-          elm.appendChild(document.createTextNode(toDo.description))
-          elm.appendChild(makeButton())
-          console.log(elm)
-          tasks.appendChild(elm)
+          tasks.appendChild(makeLi(impMap[toDo.importance], toDo.description))
         }
       }
     )
