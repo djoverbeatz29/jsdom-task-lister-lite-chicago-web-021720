@@ -14,6 +14,12 @@ button {
   font-size: 7px;
 }
 
+input[type='submit'] {
+  font-family: "Helvetica";
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #main-content {
   position: relative;
   display: flex;
